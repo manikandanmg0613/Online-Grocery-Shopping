@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cart</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        .container-fluid{
+            border: 1px solid black;
+            width: 40%;
+            margin-top: 30px;
+        }
+        .row input{
+           width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+               <h2 style="text-align: center;">Add Cart</h2>
+        </div>
+          <form action="./insert_customer.php" method="post">
+              <div class="row">
+                    <div class="form-group">
+                        <label>Customer Id</label>
+                        <input type="text" class="form-control" name="customer_id">
+                    </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                    <label>Product Id</label>
+                    <input type="text" class="form-control" name="product_id">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                    <label>Coupon Id</label>
+                    <input type="text" class="form-control" name="coupon_id">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                    <label>Cost</label>
+                    <input type="text" class="form-control" name="cost">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                    <label>Number Of Products</label>
+                    <input type="text" class="form-control" name="number_of_products">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                    <label>Total Amount</label>
+                    <input type="text" class="form-control" name="total_amount">
+                </div>
+              </div>
+              <div class="btn">
+                  <button class="btn btn-danger"><a href="" style="color: white; text-decoration: none;">Back</a></button>
+                  <button class="btn btn-primary">Create Customer</button>
+              </div>
+          </form>
+    </div>
+</body>
+</html>
